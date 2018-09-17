@@ -1,0 +1,8 @@
+<mat-list role="list">
+	<mat-list-item role="listitem" *ngFor="let recipe of recipes">
+		<h4 matLine>{{ recipe.name }}</h4>
+		<div class="tags" matLine>
+			<span>{{ recipe.tags }}</span>
+		</div>
+	</mat-list-item>
+</mat-list>

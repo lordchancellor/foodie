@@ -21,7 +21,7 @@ export class RecipesService {
 				url: hit.recipe.url,
 				calories: Math.floor(hit.recipe.calories),
 				ingredients: hit.recipe.ingredientLines,
-				tags: hit.recipe.dietLabels
+				tags: hit.recipe.dietLabels.join(', ')
 			};
 		});
 	});

@@ -5,7 +5,7 @@ export interface Recipe {
 	url: string;
 	calories: number;
 	ingredients: string[];
-	tags: string[];
+	tags: string;
 }
 
 export interface EdamamAPI {

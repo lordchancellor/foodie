@@ -1,0 +1,14 @@
+mat-list {
+	mat-list-item {
+		&:hover {
+			background: #efefef;
+		}
+
+		.tags {
+			span {
+				font-style: italic;
+				color: #999;
+			}
+		}
+	}
+}

@@ -8,4 +8,12 @@
 	
 		<button mat-raised-button color="accent" (click)="onSearch()" type="button" [disabled]="recipeSearch.invalid">Search</button>
 	</div>
+
+	<div class="flex-container">
+		<fdy-results-list [recipes]="recipes"></fdy-results-list>
+	</div>
+</div>
+
+<div class="overlay" *ngIf="loading">
+	<mat-spinner></mat-spinner>
 </div>

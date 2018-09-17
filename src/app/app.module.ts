@@ -9,11 +9,13 @@ import { RecipesService } from './recipes/recipes.service';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RecipesComponent } from './recipes/recipes.component';
+import { ResultsListComponent } from './recipes/results-list/results-list.component';
 
 @NgModule({
 	declarations: [
 		AppComponent,
-		RecipesComponent
+		RecipesComponent,
+		ResultsListComponent
 	],
 	imports: [
 		BrowserModule,
