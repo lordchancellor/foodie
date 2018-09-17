@@ -1,0 +1,16 @@
+mat-card {
+	mat-card-content {
+		ul {
+			padding-left: 20px;
+		}
+	}
+
+	mat-card-actions {
+		font-size: 0.8rem;
+		color: #999;
+		font-style: italic;
+	
+		display: flex;
+		flex-flow: row-reverse nowrap;
+	}
+}

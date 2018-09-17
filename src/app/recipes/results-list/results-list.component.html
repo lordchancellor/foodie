@@ -1,5 +1,5 @@
 <mat-list role="list">
-	<mat-list-item role="listitem" *ngFor="let recipe of recipes">
+	<mat-list-item role="listitem" *ngFor="let recipe of recipes" (click)="onSelectRecipe(recipe)">
 		<h4 matLine>{{ recipe.name }}</h4>
 		<div class="tags" matLine>
 			<span>{{ recipe.tags }}</span>

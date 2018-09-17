@@ -1,0 +1,20 @@
+<mat-card *ngIf="recipe">
+	<mat-card-header>
+		<mat-card-title>{{ recipe?.name }}</mat-card-title>
+		<mat-card-subtitle>{{ recipe?.calories }}kcal</mat-card-subtitle>
+	</mat-card-header>
+	<img mat-card-image [src]="recipe?.image">
+	<mat-card-content>
+		<p>Recipe by: {{ recipe?.source }}</p>
+		<p>Ingredients:</p>
+		<ul>
+			<li *ngFor="let ingredient of recipe?.ingredients">{{ ingredient }}</li>
+		</ul>
+		<p>
+			<a [href]="recipe?.url" target="_blank" rel=noopener>See original recipe and method</a>.
+		</p>
+	</mat-card-content>
+	<mat-card-actions>
+		{{ recipe?.tags }}
+	</mat-card-actions>
+</mat-card>

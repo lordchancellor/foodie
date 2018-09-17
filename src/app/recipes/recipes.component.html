@@ -2,7 +2,7 @@
 	<div class="search-bar">
 		<form [formGroup]="recipeSearch">
 			<mat-form-field>
-				<input matInput placeholder="Recipe Search" formControlName="search" color="dark">
+				<input matInput placeholder="Recipe Search" formControlName="search" color="dark" (keydown.enter)="onSearch()">
 			</mat-form-field>
 		</form>
 	
@@ -10,7 +10,8 @@
 	</div>
 
 	<div class="flex-container">
-		<fdy-results-list [recipes]="recipes"></fdy-results-list>
+		<fdy-results-list [recipes]="recipes" (recipeSelected)="onRecipeSelected($event)"></fdy-results-list>
+		<fdy-recipe-detail [recipe]="selectedRecipe"></fdy-recipe-detail>
 	</div>
 </div>
 

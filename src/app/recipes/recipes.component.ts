@@ -19,6 +19,8 @@ export class RecipesComponent implements OnInit {
 	recipeSearch: FormGroup;
 	recipes: Recipe[];
 
+	selectedRecipe: Recipe;
+
 	constructor(private formBuilder: FormBuilder, 
 							private snackBar: MatSnackBar,
 							private recipesService: RecipesService) { }
@@ -46,6 +48,10 @@ export class RecipesComponent implements OnInit {
 					this.snackBar.open('No results found', '', { verticalPosition: 'top', duration: 3000 });
 				}
 			);
+	}
+
+	onRecipeSelected(recipe: Recipe): void {
+		this.selectedRecipe = recipe;
 	}
 
 }

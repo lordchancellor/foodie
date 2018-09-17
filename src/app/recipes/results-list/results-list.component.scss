@@ -2,6 +2,7 @@ mat-list {
 	mat-list-item {
 		&:hover {
 			background: #efefef;
+			cursor: pointer;
 		}
 
 		.tags {
