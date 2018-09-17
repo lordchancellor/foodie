@@ -1,7 +1,11 @@
 <div class="content">
-	<form [formGroup]="recipeSearch">
-		<mat-form-field>
-			<input matInput placeholder="Recipe Search" formControlName="search" color="dark">
-		</mat-form-field>
-	</form>
+	<div class="search-bar">
+		<form [formGroup]="recipeSearch">
+			<mat-form-field>
+				<input matInput placeholder="Recipe Search" formControlName="search" color="dark">
+			</mat-form-field>
+		</form>
+	
+		<button mat-raised-button color="accent" (click)="onSearch()" type="button" [disabled]="recipeSearch.invalid">Search</button>
+	</div>
 </div>

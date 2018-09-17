@@ -1,7 +1,18 @@
 .content {
 	padding: 20px;
-
-	mat-form-field {
-		width: 100%;
+	
+	.search-bar {
+		display: flex;
+		flex-flow: row nowrap;
+		align-items: baseline;
+		
+		form {
+			flex-grow: 1;
+			padding-right: 20px;
+		
+			mat-form-field {
+				width: 100%;
+			}
+		}
 	}
 }
